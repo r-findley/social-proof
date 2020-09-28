@@ -1,0 +1,148 @@
+/* 
+   ==========================
+   Variables 
+   ==========================
+*/
+:root {
+  --primary-very-dark-magenta: hsl(300, 43%, 22%);
+  --primary-soft-pink: hsl(333, 80%, 67%);
+  --neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+/* 
+   ==========================
+   Custom Styling
+   ==========================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background: url(/images/bg-pattern-top-mobile.svg) left top no-repeat,
+    url(/images/bg-pattern-bottom-mobile.svg) left bottom no-repeat;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  width: 375px;
+}
+
+/* 
+   ==========================
+   Typography
+   ==========================
+*/
+header h1 {
+  color: var(--primary-very-dark-magenta);
+  font-size: 2rem;
+}
+
+header p {
+  color: var(--neutral-dark-grayish-magenta);
+  font-size: 0.9rem;
+}
+.reviews div {
+  color: var(--primary-very-dark-magenta);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  margin: 1rem;
+}
+
+.stars {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 14px;
+}
+
+.name,
+.role {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.name {
+  color: var(--neutral-white);
+}
+
+.role {
+  color: var(--primary-soft-pink);
+}
+
+.quote {
+  color: var(--neutral-light-grayish-magenta);
+  font-size: 0.8rem;
+  clear: both;
+  line-height: 1.2rem;
+  width: 100%;
+}
+
+.feedback {
+  text-align: left;
+}
+
+.portrait {
+  width: 38px;
+  border-radius: 45%;
+  float: left;
+  margin: 41px 23px 32px 28px;
+}
+/* 
+   ==========================
+   Grid
+   ==========================
+*/
+
+body {
+  width: 90%;
+}
+header {
+  margin: 46px auto;
+  width: 90%;
+}
+
+.reviews div {
+  background-color: var(--neutral-light-grayish-magenta);
+  border-radius: 8px;
+}
+
+.feedback {
+  margin: 50px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.feedback div {
+  background-color: var(--primary-very-dark-magenta);
+  border-radius: 10px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+.name {
+  padding-top: 41px;
+  padding-bottom: 0;
+}
+
+.role {
+  padding-top: 5px;
+}
+
+.quote {
+  padding-left: 25px;
+  width: 90%;
+}
