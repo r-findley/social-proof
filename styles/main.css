@@ -165,6 +165,10 @@ html {
   width: 375px;
 }
 
+body {
+  margin: auto;
+}
+
 /* 
    ==========================
    Typography
@@ -173,6 +177,8 @@ html {
 header h1 {
   color: var(--primary-very-dark-magenta);
   font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 header p {
@@ -276,4 +282,96 @@ header {
 .quote {
   padding-left: 25px;
   width: 90%;
+}
+
+/* 
+   ==========================
+   Attribution
+   ==========================
+*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* 
+   ==========================
+   Media Query
+   ==========================
+*/
+@media screen and (min-width: 975px) {
+  html {
+    background: url(/images/bg-pattern-top-desktop.svg) left top no-repeat,
+      url(/images/bg-pattern-bottom-desktop.svg) left bottom no-repeat;
+    width: 100%;
+  }
+
+  .top-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 70px;
+  }
+
+  header {
+    width: 50%;
+    text-align: left;
+    margin: 130px 0px 75px 70px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    width: 360px;
+  }
+
+  header p {
+    width: 420px;
+    line-height: 1.5rem;
+  }
+
+  .reviews {
+    margin-top: 130px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .reviews div {
+    flex-direction: row;
+    width: 440px;
+    height: 55px;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+
+  .stars {
+    margin: auto 2px;
+  }
+
+  .feedback {
+    flex-direction: row;
+  }
+
+  .feedback div {
+    margin-right: 20px;
+    width: 400px;
+  }
+
+  .quote-2 {
+    margin-top: 20px;
+  }
+
+  .quote-3 {
+    margin-top: 40px;
+  }
+  .review-2 {
+    align-self: center;
+  }
+
+  .review-1 {
+    align-self: flex-start;
+  }
 }
